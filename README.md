@@ -367,6 +367,10 @@ This card is discarded when it no longer has any of the things it uses. For exam
 
 Place the top X cards from your deck into your discard pile. If X is greater than the number of cards in the deck, then mill as many as possible. Do not shuffle the discard pile to refill the deck.
 
+## 9.9 Stealth
+
+While a hero has stealth, if they have not played an Attack card or made a basic attack this round, they cannot be dealt ⚔️ by Attack cards and minions engaged with that player will not attack.
+
 # 10. Damage, Block, Healing, and Resource
 
 ## 10.1 Damage (⚔️)
