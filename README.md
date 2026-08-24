@@ -166,6 +166,10 @@ When playing a Skill card, resolve its effect immediately and then discard it. S
 
 Once played, Power cards remain in play and provide static, activated, and/or triggered effects.
 
+## 3.8 Innate
+
+Starts the game in play and cannot be targeted, sacrificed, destroyed, discarded, change zones, or be removed from play by any means. Innate cards typically add additional core mechanics to a class or specialization.
+
 # 4. Zones
 
 ## 4.1 Tyrant Zone
@@ -233,7 +237,7 @@ The players take their turns simultaneously. They may play cards, activate allie
 
 ## 5.5 Setup
 
-1. Each player forms their deck by choosing a hero, class, and specialization, then puts any cards with the Innate keyword ([9.4](#94-innate)) into play. Put the Hero and Tyrant cards into play.
+1. Each player forms their deck by choosing a hero, class, and specialization, then puts any Innate cards ([3.8](#38-innate)) into play. Put the Hero and Tyrant cards into play.
 2. Shuffle each player's deck and the Tyrant deck.
 3. Put a random Act I Quest card into play.
 4. Each player draws up to their maximum hand size, then may discard any number of those cards and draw back up to their maximum hand size.
@@ -347,27 +351,23 @@ This card is placed underneath the card it attaches and typically applies some e
 
 You may move an Attack or minion from one player’s Intent Zone into your own OR you may move a minion from one player’s Engagement Zone into your own.
 
-## 9.4 Innate
-
-Starts the game in play and cannot be targeted, sacrificed, destroyed, discarded, change zones, or be removed from play by any means.
-
-## 9.5 Scry X
+## 9.4 Scry X
 
 Look at the top X cards of your deck. You may discard any and put the rest back in any order. If X is greater than the number of cards in the deck, then scry as many as possible. Do not shuffle the discard pile to refill the deck.
 
-## 9.6 X Charges
+## 9.5 X Charges
 
 Comes into play with X charge counters. They are simply used to track an amount of something--a card with charges on it must define what they do for them to have any effect.
 
-## 9.7 Uses _____
+## 9.6 Uses _____
 
 This card is discarded when it no longer has any of the things it uses. For example, a card with "Uses 3 Charges" comes into play with 3 charge counters and is discarded when the last charge is removed.
 
-## 9.8 Mill X
+## 9.7 Mill X
 
 Place the top X cards from your deck into your discard pile. If X is greater than the number of cards in the deck, then mill as many as possible. Do not shuffle the discard pile to refill the deck.
 
-## 9.9 Stealth
+## 9.8 Stealth
 
 While a hero has stealth, if they have not played an Attack card or made a basic attack this round, they cannot be dealt ⚔️ by Attack cards and minions engaged with that player will not attack.
 
