@@ -371,6 +371,10 @@ Place the top X cards from your deck into your discard pile. If X is greater tha
 
 While a hero has stealth, if they have not played an Attack card or made a basic attack this round, they cannot be dealt ⚔️ by Attack cards and minions engaged with that player will not attack.
 
+## 9.9 Tough
+
+While a character has tough, whenever they would suffer ⚔️, suffer that much -1 instead. Multiple instances of tough do not stack.
+
 # 10. Damage, Block, Healing, and Resource
 
 ## 10.1 Damage (⚔️)
