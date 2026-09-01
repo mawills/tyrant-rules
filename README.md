@@ -375,6 +375,10 @@ While a hero has stealth, if they have not played an Attack card or made a basic
 
 While a character has tough, whenever they would suffer ⚔️, suffer that much -1 instead. Multiple instances of tough do not stack.
 
+## 9.10 Reclaim
+
+Return a card from your discard pile to hand. Some reclaim effects may specify specific cards or types of cards that can be reclaimed. If no type of card is specified, you can return any card from your discard pile to hand. If there are no eligible cards in your discard pile, then this has no effect. 
+
 # 10. Damage, Block, Healing, and Resource
 
 ## 10.1 Damage (⚔️)
