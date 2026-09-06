@@ -410,6 +410,12 @@ Some effects prevent damage, represented by the 🛡️ icon. Block applied to a
 
 *Example: A card with the effect "3🛡️" prevents the next 3 damage to any target character.*
 
+### 10.2.1 "Taking Damage"
+
+Some triggered effects occur when damage is taken. These effects occur even if that damage is prevented, whether by block, the tough keyword, or some other means.
+
+*Example: You control a card with the effect "Whenever your hero takes damage, draw a card." You currently have 5🛡️ and an effect resolves targeting you for 3⚔️. Even though all of this damage is prevented by the block, you are still considered to have taken the damage and would draw a card.*
+
 ## 10.3 Heal (❤️‍)
 
 Some effects heal damage from characters, represented by the ❤️‍ icon. If a healing effect would remove more damage than is present on a target, remove all damage and ignore the excess healing.
