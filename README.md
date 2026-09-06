@@ -32,6 +32,8 @@ Effects that only resolve when specific conditions are met, typically with the w
 
 *Example: "Whenever your hero takes damage, you may discard a card to ready your Hero." In this case, the player MAY discard a card to ready their hero, but they can choose not to discard a card and not ready their hero.*
 
+*Example: "At the end of each hero phase, draw a card." In this case, the trigger is the end of a particular phase.*
+
 ### 1.2.3 Static Effects
 Any effect that is not an Activated Effect ([1.2.1](#121-activated-effects)) or Triggered Effect ([1.2.2](#122-triggered-effects)) is by default a Static Effect. The text of such an effect is always active so long as the source of that effect remains in play.
 
