@@ -132,9 +132,12 @@ Allies remain in play and can be used to attack, quest, intercept minion attacks
 
 Allies have an HP stat, as well as ATK and QST stats that determine the potency of their basic actions. If the damage on an ally ever meets or exceeds its HP, they are slain.
 
-### 3.3.2 Basic Actions
-- **Basic Attack**: Deal damage equal to the ally's ATK to any target.
-- **Basic Quest**: Add progress to the active quest equal to the ally's QST.
+### 3.3.2 Basic Actions and Consequential Damage
+
+Like Heroes, Allies can also perform some basic actions. Unlike Heroes, they suffer ([10.1.1](#suffer-damage)) Consequential Damage when doing so. The amount of damage they suffer is noted in red next to their respective stat for each basic action they can perform. This damage cannot be prevented, reduced, or modified.
+
+- **Basic Attack**: Deal damage equal to the ally's ATK to any target, then suffer attack consequential damage.
+- **Basic Quest**: Add progress to the active quest equal to the ally's QST, then suffer quest consequential damage.
 
 ### 3.3.3 Ally Limit
 
@@ -375,7 +378,7 @@ While a hero has stealth, if they have not played an Attack card or made a basic
 
 ## 9.9 Tough
 
-While a character has tough, whenever they would suffer ⚔️, suffer that much -1 instead. Multiple instances of tough do not stack.
+While a character has tough, whenever they would take ⚔️, prevent 1 of that damage. Multiple instances of tough do not stack.
 
 ## 9.10 Reclaim
 
@@ -392,6 +395,12 @@ Some effects deal damage to characters, represented by the ⚔️ icon. Damage a
 *Example: A card with the effect "2⚔️, 2⚔️" deals 2 damage two times to a single target character.*
 
 *Example: You have a Power card in play with the effect "Your Attacks deal +1⚔️". Then, you play an Attack card with the effect "2⚔️, 2⚔️". This Attack would deal 3 damage two times to a single target character.*
+
+### 10.1.1 "Suffer" Damage
+
+If an effect says "suffer damage" instead of using the damage icon, that damage CANNOT be prevented or modified.
+
+*Example: You currently have 3 🛡️ and the tough ability. You play a card with the effect "Draw a card. You suffer 2 damage." This damage would not be prevented by the block nor reduced by the tough ability. Your hero takes 2 damage.*
 
 ## 10.2 Block (🛡️)
 
