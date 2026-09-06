@@ -274,8 +274,8 @@ When either side scores a quest, they gain their respective reward printed on th
 # 7. Victory
 
 The game is played in a series of rounds until one of the following conditions is met:
-- The Heroes win immediately if the Tyrant is slain.
-- The Tyrant wins at the end of the round if any Heroes are slain.
+- The Heroes win immediately if the Tyrant is destroyed.
+- The Tyrant wins at the end of the round if any Heroes are destroyed.
 - Either the Heroes or the Tyrant win immediately if they score the Act III quest.
 
 If multiple victory conditions are achieved simultaneously, conditions higher in the list take priority.
@@ -292,11 +292,13 @@ By default, the "controller" of a card is its owner, but some effects may grant 
 
 ## 8.3 Destroy
 
-When a card is destroyed, it is put into its owner's discard pile.
+When a card is destroyed, it is put into its owner's discard pile. Heroes, Allies, Minions, and Tyrants can all be destroyed whenever they accumulate damage equal or greater than their HP.
 
-## 8.4 Slain
+## 8.4 Friendly
 
-Heroes, Allies, Minions, and Tyrants can all be slain they accumulate enough damage to equal or exceed their HP. A slain Ally or Minion is destroyed. A slain Hero discards all of their cards and may no longer play cards or activate effects. If the Tyrant is slain, the Heroes win.
+Any card controlled by a player is considered friendly to all other players.
+
+*Example: You play a card with the effect "Attach to a friendly character." This could be attached to any Hero, Ally controlled by a player, or Minion controlled by a player (such as by a Priest's Mind Control).*
 
 ## 8.5 Sacrifice
 
