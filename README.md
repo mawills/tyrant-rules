@@ -216,9 +216,15 @@ Both the Heroes and the Tyrant have a Scored Quest Area to keep track of quests 
 
 # 5. Round Structure
 
-## 5.1 Intent Phase
+## 5.1 Setup
 
-Place two cards from the Tyrant deck in the Tyrant Zone into each player's respective Intent Zone.
+Perform these steps before the game begins.
+
+1. Each player forms their deck by choosing a hero, class, and specialization, then puts any Innate cards ([3.8](#38-innate)) into play. Put the Hero and Tyrant cards into play.
+2. Shuffle each player's deck and the Tyrant deck.
+3. Put a random Act I Quest card into play.
+4. Each player draws up to their maximum hand size, then may discard any number of those cards and draw back up to their maximum hand size.
+5. Deal each player one card from the top of the tyrant deck to their respective intent zones.
 
 ## 5.2 Hero Phase
 
@@ -234,13 +240,7 @@ The players take their turns simultaneously. They may play cards, activate allie
 1. All exhausted cards in play become ready.
 2. If there is no Quest card in play, put a random Quest into play of the next highest Act.
 3. Each player may discard any number of cards from their hand, then draw back up to their maximum hand size.
-
-## 5.5 Setup
-
-1. Each player forms their deck by choosing a hero, class, and specialization, then puts any Innate cards ([3.8](#38-innate)) into play. Put the Hero and Tyrant cards into play.
-2. Shuffle each player's deck and the Tyrant deck.
-3. Put a random Act I Quest card into play.
-4. Each player draws up to their maximum hand size, then may discard any number of those cards and draw back up to their maximum hand size.
+4. Deal each player a number of cards from the top of the tyrant deck into their respective intent zones equal to the current Act e.g. one card if it is Act I, two if it is Act II, or three cards if it is Act III.
 
 # 6. Quests
 
@@ -410,3 +410,7 @@ Resources, represented by the ✨ icon, are used to pay the costs of cards and e
 - Activate an activated effect that generates ✨.
 
 Whenever a player generates ✨, it exists in a "pool" that is available for that player to spend until the end of the phase. Whenever a phase ends, any unspent ✨ is lost.
+
+*Example: A card with the effect "2✨" generates two resources for any player.*
+
+*Example: A card with the effect "1✨ self" generates one resource for the effect's controller.*
