@@ -1,0 +1,85 @@
+CARDSIZE=6.35,8.89
+BORDER=NONE
+PAGE=21,29.7,PORTRAIT,HV
+
+LINKMULCOPY=OFF
+LINKMULTI="Copies"
+LINK=1iSdFqHUYYRfLV_f3hdQLn25zrGpBKv8Jc2N3l-eTLJE!Quests
+
+; ======== TABLETOP SIMULATOR ========
+DECK=1-{(N)},"Quest Deck",#444444,100,N,{(N)+1},0,0
+
+; ======== OUTER BORDER ========
+; Default border
+RECTANGLE=,0,0,100%,100%,#444444
+
+IF=[Act]=I
+RECTANGLE=,0,0,100%,100%,#8B6914
+ENDIF
+IF=[Act]=II
+RECTANGLE=,0,0,100%,100%,#1A4488
+ENDIF
+IF=[Act]=III
+RECTANGLE=,0,0,100%,100%,#551199
+ENDIF
+
+; ======== TITLE BAR ========
+; Default title bar
+RECTANGLE=,3%,2%,94%,10%,#555555
+
+IF=[Act]=I
+RECTANGLE=,3%,2%,94%,10%,#B8860B
+ENDIF
+IF=[Act]=II
+RECTANGLE=,3%,2%,94%,10%,#2255AA
+ENDIF
+IF=[Act]=III
+RECTANGLE=,3%,2%,94%,10%,#6622AA
+ENDIF
+
+; ======== COST BADGE ========
+ELLIPSE=,5%,3%,10%,8%,#000000,#000000,0
+ELLIPSE=,5.5%,3.4%,9%,7.2%,#1B3A6B,#1B3A6B,0
+FONT=Arial,10,BTX,#FFFFFF
+TEXT=,"[Cost]",5%,3%,10%,8%,center,center
+
+; ======== CARD NAME ========
+FONT=Arial,10,BTX,#FFFFFF
+TEXT=,"[Name]",17%,2%,66%,10%,left,center
+
+; ======== ACT BADGE ========
+FONT=Arial,7.5,BTX,#FFFFFF
+TEXT=,"ACT [Act]",83%,2%,12%,10%,right,center
+
+; ======== EFFECT ========
+RECTANGLE=,3%,14%,94%,40%,#FAFAF5
+[Effect2]=REPLACE([Effect],"<i>","")
+[Effect2]=REPLACE([Effect2],"</i>","")
+HTMLFONT=default,Arial,9,,#333333,left
+HTMLTEXT=,"[Effect2]",5%,15.5%,90%,37%,#FAFAF5,0,EF,100,default
+
+; ======== HERO REWARD ========
+RECTANGLE=,3%,56%,45.5%,41%,#E8F5E9
+FONT=Arial,7,BT,#1A6628
+TEXT=,"HERO REWARD",5%,57%,42%,4%,left,center
+[HeroReward2]=REPLACE([Hero Reward],"<i>","")
+[HeroReward2]=REPLACE([HeroReward2],"</i>","")
+HTMLFONT=default,Arial,8,,#333333,left
+HTMLTEXT=,"[HeroReward2]",5%,62%,41.5%,34%,#E8F5E9,0,EF,100,default
+
+; ======== TYRANT REWARD ========
+RECTANGLE=,51.5%,56%,45.5%,41%,#F5E8E8
+FONT=Arial,7,BT,#882222
+TEXT=,"TYRANT REWARD",53.5%,57%,42%,4%,left,center
+[TyrantReward2]=REPLACE([Tyrant Reward],"<i>","")
+[TyrantReward2]=REPLACE([TyrantReward2],"</i>","")
+HTMLFONT=default,Arial,8,,#333333,left
+HTMLTEXT=,"[TyrantReward2]",53.5%,62%,41.5%,34%,#F5E8E8,0,EF,100,default
+
+; uncomment for use in TTS, comment for irl printing
+; ======== CARD BACK ========
+; [N] = {(Act)}
+;
+; RECTANGLE={(N)+1},0,0,100%,100%,#444444
+; FONT=Arial,20,BT,#FFFFFF
+; TEXT={(N)+1},"QUEST",0,0,100%,100%,center,center
