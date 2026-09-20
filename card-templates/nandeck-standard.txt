@@ -4,7 +4,7 @@ PAGE=21,29.7,PORTRAIT,HV
 DPI=600
 LINKMULCOPY=OFF
 LINKMULTI="Copies"
-LINK=<GOOGLE_SHEETS_LINK>!Shaman_Cards
+LINK=1iSdFqHUYYRfLV_f3hdQLn25zrGpBKv8Jc2N3l-eTLJE!Shaman_Cards
 
 ; ======== TABLETOP SIMULATOR ========
 DECK=1-{(N)},"Shaman Deck",#444444,100,N,{(N)+1},0,0
@@ -79,7 +79,7 @@ ENDIF
 ; ======== ART ========
 IF=[Image]<>
 FOLDER="C:\Users\wattm\Pictures\tyrant_v6\nandeck\"
-IMAGE=,[Image],3%,11%,94%,49%
+IMAGE=,"[Image].png",3%,11%,94%,49%
 ENDIF
 
 ; ======== TYPE LINE ========
