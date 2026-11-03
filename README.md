@@ -225,11 +225,12 @@ Both the Heroes and the Tyrant have a Scored Quest Area to keep track of quests 
 
 Perform these steps before the game begins.
 
-1. Each player forms their deck by choosing a hero, class, and specialization, then puts any Innate cards ([3.8](#38-innate)) into play. Put the Hero and Tyrant cards into play.
-2. Shuffle each player's deck and the Tyrant deck.
-3. Put a random Act I Quest card into play.
-4. Each player draws up to their maximum hand size, then may discard any number of those cards and draw back up to their maximum hand size.
-5. Deal each player one card from the top of the tyrant deck to their respective intent zones.
+1. Each player forms their deck by choosing a hero, class, and specialization, then puts any Innate cards ([3.8](#38-innate)) into play.
+2. Put the Hero and Tyrant cards into play. The Tyrant has 100N HP, where N is the number of players.
+3. Shuffle each player's deck and the Tyrant deck.
+4. Put a random Act I Quest card into play.
+5. Each player draws up to their maximum hand size, then may discard any number of those cards and draw back up to their maximum hand size.
+6. Deal each player one card from the top of the tyrant deck to their respective intent zones.
 
 ## 5.2 Hero Phase
 
