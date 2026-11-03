@@ -245,7 +245,7 @@ The players take their turns simultaneously. They may play cards, activate allie
 ## 5.4 Refresh Phase
 
 1. All exhausted cards in play become ready.
-2. If there is no Quest card in play, put a random Quest into play of the next highest Act.
+2. If there are no active quests cards remaining, place the quests of the next highest Act into play.
 3. Each player may discard any number of cards from their hand, then draw back up to their maximum hand size.
 4. Deal each player a number of cards from the top of the tyrant deck into their respective intent zones equal to the current Act e.g. one card if it is Act I, two if it is Act II, or three cards if it is Act III.
 
@@ -282,7 +282,6 @@ When either side scores a quest, they gain their respective reward printed on th
 The game is played in a series of rounds until one of the following conditions is met:
 - The Heroes win immediately if the Tyrant is destroyed.
 - The Tyrant wins at the end of the round if any Heroes are destroyed.
-- Either the Heroes or the Tyrant win immediately if they score the Act III quest.
 
 If multiple victory conditions are achieved simultaneously, conditions higher in the list take priority.
 
