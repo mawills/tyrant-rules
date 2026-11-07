@@ -1,10 +1,11 @@
-CARDSIZE=6.35,8.89
+UNIT=Inch
+CARDSIZE=2.5,3.5
+PAGE=8.5,11,PORTRAIT,HV
 BORDER=NONE
-PAGE=21,29.7,PORTRAIT,HV
 DPI=600
 LINKMULCOPY=OFF
 LINKMULTI="Copies"
-LINK=1iSdFqHUYYRfLV_f3hdQLn25zrGpBKv8Jc2N3l-eTLJE!Shaman_Cards
+LINK=1iSdFqHUYYRfLV_f3hdQLn25zrGpBKv8Jc2N3l-eTLJE!Print_Cards
 
 ; ======== TABLETOP SIMULATOR ========
 DECK=1-{(N)},"Shaman Deck",#444444,100,N,{(N)+1},0,0
@@ -55,7 +56,14 @@ TEXT=,"[Cost]",5%,2.5%,10%,7%,center,center
 
 ; ======== CARD NAME ========
 FONT=Arial,10,BT,#FFFFFF
-TEXT=,"[Name]",17%,2%,78%,8%,left,center
+TEXT=,"[Name]",17%,2%,72%,8%,left,center
+
+; ======== QR QUEST SYMBOL (Top Right) ========
+; Renders a World of Warcraft-style quest marker if [QR] is "!"
+IF=[QR]<>
+FONT=Georgia,15,BT,#FFD100
+TEXT=,"[QR]",89%,2%,8%,8%,center,center
+ENDIF
 
 ; ======== ART PLACEHOLDER ========
 ; Default art area
@@ -86,67 +94,79 @@ ENDIF
 RECTANGLE=,3%,61%,94%,5%,#F0F0F0
 FONT=Arial,7,BT,#555555
 IF=[Subtype]<>
-TEXT=,"[Type]  -  [Subtype]",5%,61%,90%,5%,center,center
+TEXT=,"[Type]  -  [Subtype]",3%,61%,94%,5%,center,center
 ELSE
-TEXT=,"[Type]",5%,61%,90%,5%,center,center
+TEXT=,"[Type]",3%,61%,94%,5%,center,center
 ENDIF
+
+; ======== SET SYMBOL / LETTER ========
+FONT=Arial,8,BT,#555555
+TEXT=,"[SET]",90%,61%,7%,5%,center,center
+
+; ======== IMAGE ICONS ========
+HTMLIMAGE=,"(enters)","icons/enters.png",4%,4%,P
+HTMLIMAGE=,"(exhaust)","icons/exhaust.png",4%,4%,P
+HTMLIMAGE=,"(sacrifice)","icons/sacrifice.png",4%,4%,P
+HTMLIMAGE=,"(d)","icons/damage.png",4%,4%,P
+HTMLIMAGE=,"(b)","icons/block.png",4%,4%,P
+HTMLIMAGE=,"(h)","icons/heal.png",4%,4%,P
+HTMLIMAGE=,"(q)","icons/quest_progress.png",4%,4%,P
+HTMLIMAGE=,"(tq)","icons/tyrant_quest_progress.png",4%,4%,P
 
 ; ======== TEXT BOX ========
 RECTANGLE=,3%,67%,94%,20%,#FAFAF5
-; [shield]=GAMEICONS("shield",#1B3A6B,64)
-; HTMLIMAGE=,(shield),[shield],0.35,0.35,PB
 HTMLFONT=default,Arial,9,,#555555,center
-HTMLTEXT=,"[Text]",6%,68%,88%,18%,#FAFAF5,0,EF,100,default
+HTMLTEXT=,"[Text]",6%,68%,88%,18%,#FAFAF5,0,M,100,default
 
 ; ======== STATS BAR (Characters only) ========
 IF=[HP]<>
 RECTANGLE=,3%,88%,94%,10%,#333333
 
-; ATK
-IF=[ATK]<>
-RECTANGLE=,5%,89.25%,18%,7.5%,#A3A3A3,#A3A3A3,0
-FONT=Arial,6,BT,#FFFFFF
-TEXT=,"ATK",5%,89.25%,18%,3%,center,center
-FONT=Arial,12,BT,#FFFFFF
-TEXT=,"[ATK]",5%,91.75%,18%,5%,center,center
-    ; Consequential Damage: ATK (ACD)
-    IF=[ACD]<>
-    ELLIPSE=,19%,93.5%,6%,4.25%,#CC2222,#CC2222,0
-    FONT=Arial,7,BT,#FFFFFF
-    TEXT=,"[ACD]",19%,93.5%,6%,4.25%,center,center
+    ; ATK
+    IF=[ATK]<>
+    RECTANGLE=,5%,89.25%,18%,7.5%,#A3A3A3,#A3A3A3,0
+    FONT=Arial,6,BT,#FFFFFF
+    TEXT=,"ATK",5%,89.25%,18%,3%,center,center
+    FONT=Arial,12,BT,#FFFFFF
+    TEXT=,"[ATK]",5%,91.75%,18%,5%,center,center
+        ; Consequential Damage: ATK (ACD)
+        IF=[ACD]<>
+        ELLIPSE=,19%,93.5%,6%,4.25%,#CC2222,#CC2222,0
+        FONT=Arial,7,BT,#FFFFFF
+        TEXT=,"[ACD]",19%,93.5%,6%,4.25%,center,center
+        ENDIF
     ENDIF
-ENDIF
 
-; QST
-IF=[QST]<>
-RECTANGLE=,25%,89.25%,18%,7.5%,#A3A3A3,#A3A3A3,0
-FONT=Arial,6,BT,#FFFFFF
-TEXT=,"QST",25%,89.25%,18%,3%,center,center
-FONT=Arial,12,BT,#FFFFFF
-TEXT=,"[QST]",25%,91.75%,18%,5%,center,center
-    ; Consequential Damage: QST (QCD)
-    IF=[QCD]<>
-    ELLIPSE=,39%,93.5%,6%,4.25%,#CC2222,#CC2222,0
-    FONT=Arial,7,BT,#FFFFFF
-    TEXT=,"[QCD]",39%,93.5%,6%,4.25%,center,center
+    ; QST
+    IF=[QST]<>
+    RECTANGLE=,25%,89.25%,18%,7.5%,#A3A3A3,#A3A3A3,0
+    FONT=Arial,6,BT,#FFFFFF
+    TEXT=,"QST",25%,89.25%,18%,3%,center,center
+    FONT=Arial,12,BT,#FFFFFF
+    TEXT=,"[QST]",25%,91.75%,18%,5%,center,center
+        ; Consequential Damage: QST (QCD)
+        IF=[QCD]<>
+        ELLIPSE=,39%,93.5%,6%,4.25%,#CC2222,#CC2222,0
+        FONT=Arial,7,BT,#FFFFFF
+        TEXT=,"[QCD]",39%,93.5%,6%,4.25%,center,center
+        ENDIF
     ENDIF
-ENDIF
 
-; DEF (Heroes only)
-IF=[DEF]<>
-RECTANGLE=,45%,89.25%,18%,7.5%,#A3A3A3,#A3A3A3,0
-FONT=Arial,6,BT,#FFFFFF
-TEXT=,"DEF",45%,89.25%,18%,3%,center,center
-FONT=Arial,12,BT,#FFFFFF
-TEXT=,"[DEF]",45%,91.75%,18%,5%,center,center
-ENDIF
+    ; DEF (Heroes only)
+    IF=[DEF]<>
+    RECTANGLE=,45%,89.25%,18%,7.5%,#A3A3A3,#A3A3A3,0
+    FONT=Arial,6,BT,#FFFFFF
+    TEXT=,"DEF",45%,89.25%,18%,3%,center,center
+    FONT=Arial,12,BT,#FFFFFF
+    TEXT=,"[DEF]",45%,91.75%,18%,5%,center,center
+    ENDIF
 
-; HP
-RECTANGLE=,77%,89.25%,18%,7.5%,#339933,#339933,0
-FONT=Arial,6,BT,#FFFFFF
-TEXT=,"HP",77%,89.25%,18%,3%,center,center
-FONT=Arial,12,BT,#FFFFFF
-TEXT=,"[HP]",77%,91.75%,18%,5%,center,center
+    ; HP
+    RECTANGLE=,77%,89.25%,18%,7.5%,#339933,#339933,0
+    FONT=Arial,6,BT,#FFFFFF
+    TEXT=,"HP",77%,89.25%,18%,3%,center,center
+    FONT=Arial,12,BT,#FFFFFF
+    TEXT=,"[HP]",77%,91.75%,18%,5%,center,center
 ENDIF
 
 ; uncomment for use in TTS, comment for irl printing
