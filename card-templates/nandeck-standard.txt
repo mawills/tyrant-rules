@@ -58,11 +58,9 @@ TEXT=,"[Cost]",5%,2.5%,10%,7%,center,center
 FONT=Arial,10,BT,#FFFFFF
 TEXT=,"[Name]",17%,2%,72%,8%,left,center
 
-; ======== QR QUEST SYMBOL (Top Right) ========
-; Renders a World of Warcraft-style quest marker if [QR] is "!"
+; ======== QUEST SYMBOL ========
 IF=[QR]<>
-FONT=Georgia,15,BT,#FFD100
-TEXT=,"[QR]",89%,2%,8%,8%,center,center
+IMAGE=,"icons/quest.png",91%,3%,3%,6%
 ENDIF
 
 ; ======== ART PLACEHOLDER ========
@@ -101,7 +99,7 @@ ENDIF
 
 ; ======== SET SYMBOL / LETTER ========
 FONT=Arial,8,BT,#555555
-TEXT=,"[SET]",90%,61%,7%,5%,center,center
+TEXT=,"[SET]",88%,61%,7%,5%,center,center
 
 ; ======== IMAGE ICONS ========
 HTMLIMAGE=,"(enters)","icons/enters.png",4%,4%,P
