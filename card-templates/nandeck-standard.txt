@@ -99,7 +99,7 @@ ENDIF
 
 ; ======== SET SYMBOL / LETTER ========
 FONT=Arial,8,BT,#555555
-TEXT=,"[SET]",88%,61%,7%,5%,center,center
+TEXT=,"[SET]",90%,61.25%,7%,5%,center,center
 
 ; ======== IMAGE ICONS ========
 HTMLIMAGE=,"(enters)","icons/enters.png",4%,4%,P
