@@ -18,7 +18,7 @@ If multiple effects occur simultaneously, such as "at the start of the Hero Phas
 
 ## 1.2 Effects
 
-"Effect" refers to a single logical section in the Text Box ([2.5](#25-text-box)) of a card. A single card may have multiple distinct effects, often separated by a line break. Heroes, Tyrants, Allies, Minions, Attacks, Skills, Powers, and Quests can all have effects.
+"Effect" refers to a single logical section in the Text Box ([2.5](#25-text-box)) of a card. A single card may have multiple distinct effects, often separated by a line break. Heroes, Tyrants, Allies, Minions, Attacks, Skills, Powers, and Innates can all have effects.
 
 ### 1.2.1 Activated Effects
 Effects that only resolve when optionally activated by a player. Such effects will indicate some type of requirement, followed by a colon *(:)*, followed by the text of the effect. If the requirements of the effect cannot be met, the effect cannot be activated. Unless otherwise specified by the effect, activated effects may only be used during the Hero Phase ([5.2](#52-hero-phase)).
@@ -118,7 +118,7 @@ Heroes have an HP stat in the bottom right of the card. If the damage on a Hero 
 During the Hero Phase ([5.2](#52-hero-phase)), a hero may exhaust to perform a basic action. The basic actions are:
 - **Basic Attack**: Deal damage equal to the hero's ATK to any target.
 - **Basic Defend**: Give block to any target equal to the hero's DEF.
-- **Basic Quest**: Add progress to the active quest equal to the hero's QST.
+- **Basic Quest**: Gain quest progress counters equal to the hero's QST.
 
 ## 3.2 Tyrant
 
@@ -137,7 +137,7 @@ Allies have an HP stat, as well as ATK and QST stats that determine the potency 
 Like Heroes, Allies can also perform some basic actions. Unlike Heroes, they suffer ([10.1.1](#suffer-damage)) Consequential Damage when doing so. The amount of damage they suffer is noted in red next to their respective stat for each basic action they can perform. This damage cannot be prevented, reduced, or modified.
 
 - **Basic Attack**: Deal damage equal to the ally's ATK to any target, then suffer attack consequential damage.
-- **Basic Quest**: Add progress to the active quest equal to the ally's QST, then suffer quest consequential damage.
+- **Basic Quest**: The Ally's controller gains quest progress equal to the ally's QST, then the Ally suffers consequential damage.
 
 ### 3.3.3 Ally Limit
 
@@ -197,7 +197,7 @@ Each player has an engagement zone. It contains both the Intent Zone and the Act
 
 ## 4.5 Player Zone
 
-Contains a player's Hero, deck, discard pile, Allies, and Powers.
+Contains a player's Hero, deck, discard pile, quest reward pile, Allies, Powers, and Innates.
 
 ## 4.6 Hand
 
@@ -209,28 +209,19 @@ Whenever an effect would draw cards from a deck, those cards are drawn one at a 
 
 Whenever a player or the tyrant would draw a card, but there are no cards left in their deck, that shuffle their discard pile and it becomes their deck.
 
-## 4.8 Quest Area
-
-### 4.8.1 Active Quest Area
-
-Contains the currently active quests. Quest Progress (QP) counters may be added to them and any effects it has are active.
-
-### 4.8.2 Scored Quest Areas
-
-Both the Heroes and the Tyrant have a Scored Quest Area to keep track of quests that they have scored.
-
 # 5. Round Structure
 
 ## 5.1 Setup
 
 Perform these steps before the game begins.
 
-1. Each player forms their deck by choosing a hero, class, and specialization, then puts any Innate cards ([3.8](#38-innate)) into play.
-2. Put the Hero and Tyrant cards into play. The Tyrant has 200N HP, where N is the number of players.
-3. Shuffle each player's deck and the Tyrant deck.
-4. Put the Act I quests into play.
-5. Each player draws up to their maximum hand size, then may discard any number of those cards and draw back up to their maximum hand size.
-6. Deal each player two cards from the top of the tyrant deck to their respective intent zones.
+1. Each player forms their deck by choosing a hero, class, and specialization, then separates out the quest reward cards (marked with a ! icon in the upper-right) and any Innate cards.
+2. Put all Innate cards ([3.8](#38-innate)) into play.
+3. Shuffle the quest rewards into a face down quest reward pile, then reveal the top two quest rewards.
+4. Put the Hero and Tyrant cards into play. The Tyrant has 100N HP, where N is the number of players.
+5. Shuffle each player's deck and the Tyrant deck.
+6. Each player draws up to their maximum hand size, then may discard any number of those cards and draw back up to their maximum hand size.
+7. Deal each player two cards from the top of the tyrant deck to their respective intent zones.
 
 ## 5.2 Hero Phase
 
@@ -239,43 +230,29 @@ The players take their turns simultaneously. They may play cards, activate allie
 ## 5.3 Tyrant Phase
 
 1. Cards in the Intent Zone are moved to their respective player's Engagement Zone.
-2. All Tyrant Attack, Skill, or Power cards in a player's Active Zone are resolved in any order, and all ready Minions in a player's Active Zone will attack that player's hero in any order of the player's choosing.
-3. Add N tyrant quest progress to an active quest with the most tyrant quest progress, where N is the number of players. If there is a tie, the players may choose.
+2. All Tyrant Attack, Skill, or Power cards in a player's Engagement Zone are resolved in any order, and all ready Minions in a player's Engagement Zone will attack that player's hero in any order of the player's choosing.
 
 ## 5.4 Refresh Phase
 
 1. All exhausted cards in play become ready.
-2. If there are no active quests cards remaining, place the quests of the next highest Act into play.
-3. Each player may discard any number of cards from their hand, then draw back up to their maximum hand size.
-4. Deal each player a number of cards from the top of the tyrant deck into their respective intent zones equal to one plus the current Act e.g. two cards if it is Act I, three if it is Act II, or four cards if it is Act III.
+2. Each player may discard any number of cards from their hand, then draw back up to their maximum hand size.
+3. Deal each player two cards from the top of the tyrant deck, plus one additional card for every 4 rounds that have begun since the start of the game.
 
 # 6. Quests
 
-## 6.1 Quest Act
+Players may gain quest progress by performing basic quest actions, or from card effects that gain it with a yellow ! icon.
 
-Each quest card has an "Act" level, starting at I and going up to III.
+Each player has a quest reward pile formed from all of the cards in their deck marked with a yellow ! icon in the upper right. The top two cards of the quest reward pile are always visible and available to be claimed.
 
-Each quest requires a number of progress counters to be scored, either by the Heroes or the Tyrant. When a side has scored a quest, it is removed from the active quest area and added to their scored area. During the Refresh Phase, if there is no active quest, a random quest of the next highest Act will come into play.
+Whenever a player gains quest progress, they may immediately choose to spend it on one of the available rewards. If they do, that quest reward is immediately played, the other quest reward is put on the bottom of the quest reward pile, and two new quest rewards are revealed form the top of the pile.
 
-## 6.2 Progress Counters
+## 6.1 Quest Rewards
 
-Quest progress (QP) for the Heroes is represented by 🚩, while card progress for the Tyrant is represented by 💀. The number of progress counters required is represented by a number like "5N", meaning 5 * the number of Heroes in the game.
+The mumber of quest progress counters required to claim a quest reward is equal to to the regular cost of the card, printed in the top left.
 
-Whenever 💀 is generated, place it on the active quest with the most 💀 until it is scored. If there is a tie, the players may choose.
+## 6.2 Depleted Quest Rewards
 
-If more GP is generated by a single effect than is needed to score a quest, the excess may be placed on another active quest.
-
-If both sides simultaneously add enough progress counters to the quest to score it, the Tyrant side will score the quest.
-
-Quest progress counters cannot be reduced below 0. If an effect would reduce quest progress below zero, it reduces it to zero instead.
-
-## 6.3 Quest Effects
-
-Quests may also have a unique effect while they are active. As long as the quest remains active (scored quests are no longer active), its effects are active.
-
-## 6.4 Quest Rewards
-
-When either side scores a quest, they gain their respective reward printed on the card.
+If a player claims a reward and does not have enough cards left in their pile to reveal two new quest rewards, instead reveal as many as possible.
 
 # 7. Victory
 
