@@ -114,7 +114,7 @@ HTMLIMAGE=,"(r)","icons/resource.png",4%,4%,P
 ; ======== TEXT BOX ========
 RECTANGLE=,3%,67%,94%,20%,#FAFAF5
 HTMLFONT=default,Arial,9,,#555555,center
-HTMLTEXT=,"[Text]",6%,68%,88%,18%,#FAFAF5,0,M,100,default
+HTMLTEXT=,"[Text]",6%,68%,88%,18%,#FAFAF5,0,EF,100,default
 
 ; ======== STATS BAR (Characters only) ========
 IF=[HP]<>
