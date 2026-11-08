@@ -109,7 +109,7 @@ HTMLIMAGE=,"(d)","icons/damage.png",4%,4%,P
 HTMLIMAGE=,"(b)","icons/block.png",4%,4%,P
 HTMLIMAGE=,"(h)","icons/heal.png",4%,4%,P
 HTMLIMAGE=,"(q)","icons/quest_progress.png",4%,4%,P
-HTMLIMAGE=,"(tq)","icons/tyrant_quest_progress.png",4%,4%,P
+HTMLIMAGE=,"(r)","icons/resource.png",4%,4%,P
 
 ; ======== TEXT BOX ========
 RECTANGLE=,3%,67%,94%,20%,#FAFAF5
