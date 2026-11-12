@@ -362,7 +362,7 @@ While a hero has stealth, if they have not played an Attack card or made a basic
 
 ## 9.9 Tough
 
-While a character has tough, whenever they would take ⚔️, prevent 1 of that damage. Multiple instances of tough do not stack.
+While a character has tough, whenever they would take ⚔️, prevent 1 of that damage (to a minimum of 1). Multiple instances of tough do not stack.
 
 ## 9.10 Reclaim
 
