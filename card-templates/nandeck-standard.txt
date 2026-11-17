@@ -55,8 +55,8 @@ FONT=Arial,13,BT,#FFFFFF
 TEXT=,"[Cost]",5%,2.5%,10%,7%,center,center
 
 ; ======== CARD NAME ========
-FONT=Arial,10,BT,#FFFFFF
-TEXT=,"[Name]",17%,2%,72%,8%,left,center
+FONT=Arial,10,BTX,#FFFFFF
+TEXT=,[Name],17%,2%,72%,8%,left,center
 
 ; ======== QUEST SYMBOL ========
 IF=[QR]<>
