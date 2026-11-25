@@ -71,6 +71,11 @@ IF=[QR]<>
 IMAGE=,"icons/quest.png",91%,3%,3%,6%
 ENDIF
 
+; ======== INNATE SYMBOL ========
+IF=[Type]=Innate
+IMAGE=,"icons/innate.png",88%,3%,8%,6%
+ENDIF
+
 ; ======== ART PLACEHOLDER ========
 ; Default art area
 RECTANGLE=,3%,11%,94%,49%,#C8C8C8
@@ -174,11 +179,3 @@ RECTANGLE=,3%,88%,94%,10%,#333333
     FONT=Arial,12,BT,#FFFFFF
     TEXT=,"[HP]",77%,91.75%,18%,5%,center,center
 ENDIF
-
-; uncomment for use in TTS, comment for irl printing
-; ======== CARD BACK ========
-; [N] = {(Type)}
-;
-; RECTANGLE={(N)+1},0,0,100%,100%,#444444
-; FONT=Arial,20,BT,#FFFFFF
-; TEXT={(N)+1},"SHAMAN",0,0,100%,100%,center,center
