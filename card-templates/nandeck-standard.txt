@@ -54,6 +54,14 @@ ELLIPSE=,5.5%,2.9%,9%,6.2%,#1B3A6B,#1B3A6B,0
 FONT=Arial,13,BT,#FFFFFF
 TEXT=,"[Cost]",5%,2.5%,10%,7%,center,center
 
+; ======== COST BADGE - QR OVERLAY ========
+IF=[QR]<>
+ELLIPSE=,3.4%,6.5%,4.2%,3.4%,#000000,#000000,0
+ELLIPSE=,3.6%,6.7%,3.8%,3%,#FFCC00,#FFCC00,0
+FONT=Arial,7,BT,#FFFFFF
+TEXT=,"[QR]",3.6%,6.7%,3.8%,3%,center,center
+ENDIF
+
 ; ======== CARD NAME ========
 FONT=Arial,10,BTX,#FFFFFF
 TEXT=,[Name],17%,2%,72%,8%,left,center
@@ -61,6 +69,11 @@ TEXT=,[Name],17%,2%,72%,8%,left,center
 ; ======== QUEST SYMBOL ========
 IF=[QR]<>
 IMAGE=,"icons/quest.png",91%,3%,3%,6%
+ENDIF
+
+; ======== INNATE SYMBOL ========
+IF=[Type]=Innate
+IMAGE=,"icons/innate.png",88%,3%,8%,6%
 ENDIF
 
 ; ======== ART PLACEHOLDER ========
@@ -166,11 +179,3 @@ RECTANGLE=,3%,88%,94%,10%,#333333
     FONT=Arial,12,BT,#FFFFFF
     TEXT=,"[HP]",77%,91.75%,18%,5%,center,center
 ENDIF
-
-; uncomment for use in TTS, comment for irl printing
-; ======== CARD BACK ========
-; [N] = {(Type)}
-;
-; RECTANGLE={(N)+1},0,0,100%,100%,#444444
-; FONT=Arial,20,BT,#FFFFFF
-; TEXT={(N)+1},"SHAMAN",0,0,100%,100%,center,center
